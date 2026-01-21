@@ -1,0 +1,78 @@
+name: tokwalker
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.27.0
+  cloud_firestore: ^4.15.0
+  firebase_auth: ^4.17.0
+  firebase_storage: ^11.6.0
+
+  # UI & Utilities
+  cupertino_icons: ^1.0.8
+  flutter_contacts: ^1.1.9+2
+  permission_handler: ^11.3.1
+  rxdart: ^0.27.7
+  path_provider: ^2.1.2
+  url_launcher: ^6.2.5
+
+  # Document & Files
+  file_picker: ^8.0.0
+  open_filex: ^4.5.0
+
+  # Media
+  camera: ^0.10.5+9
+  image_picker: ^1.0.7
+  video_player: ^2.8.2
+  video_thumbnail: ^0.5.3
+  cached_network_image: ^3.3.1
+
+  # Audio Recording (OFFICIAL, PLATFORM-SAFE)
+  record: ^5.0.0
+  audioplayers: ^5.2.1
+  provider: ^6.0.5
+
+  # Location Share
+  google_maps_flutter: ^2.5.0
+  geolocator: ^10.1.0
+  geocoding: ^3.0.0
+
+dependency_overrides:
+  record_platform_interface: 1.0.0
+  record_linux: 0.7.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
+
+flutter_icons:
+  android: true
+  ios: false
+  adaptive_icon_background: "#25D366"
+  adaptive_icon_foreground: assets/icon/app_icon_foreground.png
+
+flutter_native_splash:
+  android: true
+  ios: false
+  color: "#000000"
+  image: assets/icon/app_icon.png
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
